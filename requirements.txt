@@ -1,0 +1,10 @@
+# Core dependencies for the BITS Agentic AI Engineering course
+python-dotenv>=1.0.0
+
+# --- Choose ONE LLM provider (install the matching SDK) ---
+openai>=1.0.0                 # OpenAI (default)
+groq>=0.11.0               # Groq — FREE tier, fast (Llama, etc.)
+# anthropic>=0.39.0          # Anthropic — Claude
+# google-generativeai>=0.8.0 # Google — Gemini (FREE tier)
+
+# Weeks 2+ will add more (tools, vector DBs, agent frameworks) as we go.
