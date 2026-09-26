@@ -82,19 +82,21 @@ example = AgentBlueprint(
 # YOUR BLUEPRINT — TODO: design an agent of your own
 # ---------------------------------------------------------------------------
 my_agent = AgentBlueprint(
-    name="TODO: name your agent",
-    goal="TODO: what should it achieve?",
-    done_when="TODO: how do you KNOW it's finished?",
+    name="xav_bot",
+    goal="correct assignment of my students",
+    done_when="It's complete when all assignments of my students are corrected and feedback is provided.",
     tools=[
-        "TODO: tool 1",
-        "TODO: tool 2",
+        "ACces to internet",
+        "PDF reader",
     ],
     memory=[
-        "TODO: what must it remember?",
+        "List of students and their assignments",
+        "Feedback provided to each student in previous sessions",
     ],
     actions=[
-        "TODO: step 1",
-        "TODO: step 2",
+        "Review each student's assignment",
+        "Provide feedback and corrections",
+        "Notify me when all assignments are corrected and feedback is provided",
     ],
 )
 
