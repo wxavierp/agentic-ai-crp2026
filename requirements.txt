@@ -7,4 +7,6 @@ groq>=0.11.0               # Groq — FREE tier, fast (Llama, etc.)
 # anthropic>=0.39.0          # Anthropic — Claude
 # google-generativeai>=0.8.0 # Google — Gemini (FREE tier)
 
+requests>=2.31.0            # Week 2 — call real external APIs from tools
+
 # Weeks 2+ will add more (tools, vector DBs, agent frameworks) as we go.
