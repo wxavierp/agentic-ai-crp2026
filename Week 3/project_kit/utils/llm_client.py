@@ -15,6 +15,13 @@ TOOL CALLING NOTE (important for Week 2):
   recommended default for this course. Anthropic and Google Gemini also do
   tool calling, but with a *different* request/response shape — so for the
   Week 2 labs use LLM_PROVIDER=openai, groq, or ollama.
+
+CHEAP OPENAI MODELS (instructor demos, Day 10):
+  Set  LLM_PROVIDER=openai  and  LLM_MODEL=gpt-4o-mini  (the default - about $0.15 / $0.60 per
+  million tokens, so a demo run costs a fraction of a cent). gpt-5-mini also works; it is a
+  reasoning model, so add LLM_REASONING_EFFORT=minimal to keep it fast and cheap.
+  The client adapts if a model wants max_completion_tokens instead of max_tokens, or rejects a
+  custom temperature.
 """
 
 import os
@@ -110,6 +117,37 @@ class LLMClient:
     def _default_model(self):
         return os.getenv("LLM_MODEL") or DEFAULT_MODELS.get(self.provider, "gpt-4o-mini")
 
+    def _create(self, **kwargs):
+        """chat.completions.create with two small compatibility fixes for newer models.
+
+        - LLM_REASONING_EFFORT (openai only): passed as reasoning_effort when set.
+        - a model that refuses max_tokens -> retry with max_completion_tokens
+        - a model that refuses a custom temperature -> retry without it
+        Each fix is remembered, so the extra attempt happens at most once per client.
+        """
+        effort = os.getenv("LLM_REASONING_EFFORT")
+        if effort and self.provider == "openai":
+            kwargs["reasoning_effort"] = effort
+        if getattr(self, "_swap_max", False) and "max_tokens" in kwargs:
+            kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+        if getattr(self, "_no_temp", False):
+            kwargs.pop("temperature", None)
+        for _ in range(3):
+            try:
+                return self.client.chat.completions.create(**kwargs)
+            except Exception as e:
+                msg = str(e).lower()
+                if "max_tokens" in kwargs and "max_completion_tokens" in msg:
+                    self._swap_max = True
+                    kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+                elif "temperature" in kwargs and "temperature" in msg and (
+                        "unsupported" in msg or "does not support" in msg or "only the default" in msg):
+                    self._no_temp = True
+                    kwargs.pop("temperature")
+                else:
+                    raise
+        return self.client.chat.completions.create(**kwargs)
+
     # ------------------------------------------------------------------ #
     #  Week 1 method — a single prompt in, a single string out.          #
     # ------------------------------------------------------------------ #
@@ -123,7 +161,7 @@ class LLMClient:
                 if system_message:
                     messages.append({"role": "system", "content": system_message})
                 messages.append({"role": "user", "content": prompt})
-                resp = self.client.chat.completions.create(
+                resp = self._create(
                     model=model, messages=messages,
                     temperature=temperature, max_tokens=max_tokens,
                 )
@@ -194,7 +232,7 @@ class LLMClient:
             kwargs["tools"] = tools
             kwargs["tool_choice"] = tool_choice
 
-        resp = self.client.chat.completions.create(**kwargs)
+        resp = self._create(**kwargs)
         msg = resp.choices[0].message
 
         # Normalise the tool calls into simple ToolCall objects.

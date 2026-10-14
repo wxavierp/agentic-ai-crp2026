@@ -8,6 +8,8 @@ Copy these files into **your** project folder (keep `utils/llm_client.py` beside
 | `kit_planner.py` | 9 | `run_plan(agent, goal)`: JSON plan → check → (approve) → execute → re-plan → synthesise |
 | `kit_reflect.py` | 10 | `reflect(agent, goal, rubric, verifier)`: code checks + rubric critic that sees the evidence |
 | `kit_eval.py` | 10 | `run_eval(make_agent)`: golden tasks → pass-rate table + `eval_report.json` |
+| `kit_predict.py` | 10 | `predict_then_run(agent, goal)`: you predict steps/tools/stop reason BEFORE the run (timestamped), then a scorecard |
+| `example_support_desk/walkthrough_reflect.py` | 10 | ONE reflection round on the real agent with every hand-off printed (trace, `evidence()`, verifier, the critic prompt). `--offline` = scripted model, no key |
 | `example_support_desk/` | all | a complete worked project: tools, golden tasks, demos |
 | `tests/test_kit.py` | — | offline tests (no keys): `python tests/test_kit.py` |
 

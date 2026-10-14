@@ -11,6 +11,7 @@ from kit_agent import ProjectAgent, Budget
 from kit_planner import run_plan, parse_plan, check_plan
 from kit_reflect import reflect
 from kit_eval import run_eval
+from kit_predict import predict_then_run
 
 _n = [0]
 def call(name, **args):
@@ -118,6 +119,22 @@ def test_eval_harness():
     s = run_eval(lambda: P.make_agent(client=next(scripts)), tasks_path=path,
                  out=os.path.join(tempfile.mkdtemp(), "r.json"), quiet=True)
     assert s["passed"] == 1 and s["total"] == 2
+
+def test_predict_then_run_commits_before_run():
+    log = os.path.join(tempfile.mkdtemp(), "p.jsonl")
+    c = FakeClient([use("x", call("get_order_status", order_id="A100")), say("shipped")])
+    a = P.make_agent(client=c)
+    seen_before = []
+    def runner(goal):
+        seen_before.append(open(log).read().count('"kind": "prediction"'))   # already on disk?
+        return a.run(goal)
+    answers = iter(["2", "get_order_status", "goal_reached"])
+    out = predict_then_run(a, "status A100", ask=lambda q: next(answers), logfile=log, runner=runner)
+    assert seen_before == [1] and out["points"] == 3
+    assert len(open(log).read().strip().splitlines()) == 2
+    a2 = P.make_agent(client=FakeClient([say("hi")]))
+    wrong = iter(["9", "check_stock", "repeat_guard"])
+    assert predict_then_run(a2, "hi", ask=lambda q: next(wrong), logfile=log)["points"] == 0
 
 if __name__ == "__main__":
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
