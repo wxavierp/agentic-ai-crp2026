@@ -90,4 +90,4 @@ with gr.Blocks(title="FAISS search") as app:
     gr.Button("Search", variant="primary").click(run_search, box, table)
     gr.Examples(["Can I get my money back?", "E-4210", "How do I reset my password?", "Falcon S2 Pro warranty", "PN-30147"], inputs=box, fn=run_search, outputs=table, run_on_click=True)
 
-app.launch()                                      # opens in your browser: http://127.0.0.1:7860
+app.launch(inbrowser=True)                    # opens in your browser: http://127.0.0.1:7860

@@ -150,4 +150,4 @@ with gr.Blocks(title="Re-rank search") as app:
     gr.Button("Search", variant="primary").click(run_search, [box, weight], [vector_table, rerank_table])
     gr.Examples(["Can I get my money back?", "E-4210", "How do I reset my password?", "Falcon S2 Pro warranty", "PN-30147"], inputs=box)
 
-app.launch()                                      # opens in your browser: http://127.0.0.1:7860
+app.launch(inbrowser=True)                    # opens in your browser: http://127.0.0.1:7860
