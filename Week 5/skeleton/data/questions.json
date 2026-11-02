@@ -1,0 +1,42 @@
+[
+ {
+  "question": "The display says E-4210",
+  "answer": "err-4210"
+ },
+ {
+  "question": "Do you stock PN-30147?",
+  "answer": "part-30147"
+ },
+ {
+  "question": "My screen shows E-4021, what should I do?",
+  "answer": "err-4021"
+ },
+ {
+  "question": "What is part PN-30471?",
+  "answer": "part-30471"
+ },
+ {
+  "question": "Can I send back something I already opened?",
+  "answer": "general-returns"
+ },
+ {
+  "question": "Does my microphone work with a laptop?",
+  "answer": "general-compat"
+ },
+ {
+  "question": "Can I get my money back?",
+  "answer": "general-refund"
+ },
+ {
+  "question": "Who pays the import tax on my order?",
+  "answer": "general-intl"
+ },
+ {
+  "question": "How do I reset my password?",
+  "answer": "general-account"
+ },
+ {
+  "question": "What is the warranty on the Falcon S2 Pro?",
+  "answer": "falcon-s2-pro-warranty"
+ }
+]
