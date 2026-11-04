@@ -1,0 +1,62 @@
+[
+ {
+  "question": "How long is the warranty on the Falcon S2 Pro?",
+  "expected": "falcon-s2-pro-warranty",
+  "answer": "The Falcon S2 Pro is covered against faults for 3 years. [falcon-s2-pro-warranty]",
+  "human": "good"
+ },
+ {
+  "question": "The display says E-4210. What should I do?",
+  "expected": "err-4210",
+  "answer": "Error E-4210 means the storage is full. Delete recordings in the app, then restart the device. [err-4210]",
+  "human": "good"
+ },
+ {
+  "question": "How fast do I get my refund?",
+  "expected": "general-refund",
+  "answer": "Refunds go back to your original payment card within 5 business days after we receive the parcel. [general-refund]",
+  "human": "good"
+ },
+ {
+  "question": "How long is the warranty on the Orion X3?",
+  "expected": "orion-x3-warranty",
+  "answer": "The Orion X3 comes with a 5 year warranty that also covers cracked screens and water damage. [orion-x3-warranty]",
+  "human": "bad"
+ },
+ {
+  "question": "Who pays customs duties on international orders?",
+  "expected": "general-intl",
+  "answer": "The customer pays the customs duties. They are not included in the price.",
+  "human": "bad"
+ },
+ {
+  "question": "How long does the Vega M6 take to arrive?",
+  "expected": "vega-m6-shipping",
+  "answer": "It reaches you in 2 working days from our Dubai site. [vega-m5-shipping]",
+  "human": "bad"
+ },
+ {
+  "question": "Do you sell the Pixel 9 phone?",
+  "expected": "none",
+  "answer": "Yes, we sell the Pixel 9 phone for AED 3,499. [general-support]",
+  "human": "bad"
+ },
+ {
+  "question": "What is the price of the Orion X5?",
+  "expected": "none",
+  "answer": "I don't know. I could not find this in our knowledge base.",
+  "human": "good"
+ },
+ {
+  "question": "How do I reset my password?",
+  "expected": "general-account",
+  "answer": "I don't know.",
+  "human": "bad"
+ },
+ {
+  "question": "How long is the warranty on the Falcon S1?",
+  "expected": "falcon-s1-warranty",
+  "answer": "Every Lumo product now has a lifetime warranty. [warranty-update]",
+  "human": "bad"
+ }
+]
