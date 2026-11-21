@@ -1,0 +1,338 @@
+[
+ {
+  "id": "orion-x2-warranty",
+  "text": "Orion X2 warranty: the Orion X2 headset is covered against faults for 2 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "orion-x2-battery",
+  "text": "Orion X2 top-up: after 4 hours of charging it is full, and it then plays for 30 hours."
+ },
+ {
+  "id": "orion-x2-shipping",
+  "text": "Orion X2 delivery: the Orion X2 ships from our Dubai warehouse and arrives in 3 business days."
+ },
+ {
+  "id": "orion-x2-returns",
+  "text": "Orion X2 sealed box: it may be brought to a Lumo store within 14 days, if the box is sealed."
+ },
+ {
+  "id": "orion-x3-warranty",
+  "text": "Orion X3 protection: three years from the purchase date for any fault."
+ },
+ {
+  "id": "orion-x3-battery",
+  "text": "Orion X3 battery: the Orion X3 runs for 40 hours on one charge and takes about 4 hours to charge fully."
+ },
+ {
+  "id": "orion-x3-shipping",
+  "text": "Orion X3 lead time: it reaches you in 2 working days from our Dubai site."
+ },
+ {
+  "id": "orion-x3-returns",
+  "text": "Orion X3 returns: you can send back the Orion X3 within 30 days if it is unopened."
+ },
+ {
+  "id": "falcon-s1-warranty",
+  "text": "Falcon S1 warranty: the Falcon S1 speaker is covered against faults for 1 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "falcon-s1-battery",
+  "text": "Falcon S1 top-up: after 4 hours of charging it is full, and it then plays for 12 hours."
+ },
+ {
+  "id": "falcon-s1-shipping",
+  "text": "Falcon S1 delivery: the Falcon S1 ships from our Dubai warehouse and arrives in 4 business days."
+ },
+ {
+  "id": "falcon-s1-returns",
+  "text": "Falcon S1 sealed box: it may be brought to a Lumo store within 14 days, if the box is sealed."
+ },
+ {
+  "id": "falcon-s2-warranty",
+  "text": "Falcon S2 protection: two years from the purchase date for any fault."
+ },
+ {
+  "id": "falcon-s2-battery",
+  "text": "Falcon S2 battery: the Falcon S2 runs for 18 hours on one charge and takes about 3 hours to charge fully."
+ },
+ {
+  "id": "falcon-s2-shipping",
+  "text": "Falcon S2 lead time: it reaches you in 3 working days from our Dubai site."
+ },
+ {
+  "id": "falcon-s2-returns",
+  "text": "Falcon S2 returns: you can send back the Falcon S2 within 45 days if it is unopened."
+ },
+ {
+  "id": "vega-m5-warranty",
+  "text": "Vega M5 warranty: the Vega M5 microphone is covered against faults for 1 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "vega-m5-battery",
+  "text": "Vega M5 top-up: after 2 hours of charging it is full, and it then plays for 8 hours."
+ },
+ {
+  "id": "vega-m5-shipping",
+  "text": "Vega M5 delivery: the Vega M5 ships from our Dubai warehouse and arrives in 5 business days."
+ },
+ {
+  "id": "vega-m5-returns",
+  "text": "Vega M5 sealed box: it may be brought to a Lumo store within 30 days, if the box is sealed."
+ },
+ {
+  "id": "vega-m6-warranty",
+  "text": "Vega M6 protection: two years from the purchase date for any fault."
+ },
+ {
+  "id": "vega-m6-battery",
+  "text": "Vega M6 battery: the Vega M6 runs for 10 hours on one charge and takes about 2 hours to charge fully."
+ },
+ {
+  "id": "vega-m6-shipping",
+  "text": "Vega M6 lead time: it reaches you in 2 working days from our Dubai site."
+ },
+ {
+  "id": "vega-m6-returns",
+  "text": "Vega M6 returns: you can send back the Vega M6 within 14 days if it is unopened."
+ },
+ {
+  "id": "nova-k4-warranty",
+  "text": "Nova K4 warranty: the Nova K4 keyboard is covered against faults for 1 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "nova-k4-battery",
+  "text": "Nova K4 top-up: after 3 hours of charging it is full, and it then plays for 60 hours."
+ },
+ {
+  "id": "nova-k4-shipping",
+  "text": "Nova K4 delivery: the Nova K4 ships from our Dubai warehouse and arrives in 3 business days."
+ },
+ {
+  "id": "nova-k4-returns",
+  "text": "Nova K4 sealed box: it may be brought to a Lumo store within 30 days, if the box is sealed."
+ },
+ {
+  "id": "nova-k7-warranty",
+  "text": "Nova K7 protection: two years from the purchase date for any fault."
+ },
+ {
+  "id": "nova-k7-battery",
+  "text": "Nova K7 battery: the Nova K7 runs for 90 hours on one charge and takes about 3 hours to charge fully."
+ },
+ {
+  "id": "nova-k7-shipping",
+  "text": "Nova K7 lead time: it reaches you in 4 working days from our Dubai site."
+ },
+ {
+  "id": "nova-k7-returns",
+  "text": "Nova K7 returns: you can send back the Nova K7 within 21 days if it is unopened."
+ },
+ {
+  "id": "atlas-t8-warranty",
+  "text": "Atlas T8 warranty: the Atlas T8 tablet is covered against faults for 2 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "atlas-t8-battery",
+  "text": "Atlas T8 top-up: after 3 hours of charging it is full, and it then plays for 11 hours."
+ },
+ {
+  "id": "atlas-t8-shipping",
+  "text": "Atlas T8 delivery: the Atlas T8 ships from our Dubai warehouse and arrives in 3 business days."
+ },
+ {
+  "id": "atlas-t8-returns",
+  "text": "Atlas T8 sealed box: it may be brought to a Lumo store within 14 days, if the box is sealed."
+ },
+ {
+  "id": "atlas-t10-warranty",
+  "text": "Atlas T10 protection: three years from the purchase date for any fault."
+ },
+ {
+  "id": "atlas-t10-battery",
+  "text": "Atlas T10 battery: the Atlas T10 runs for 14 hours on one charge and takes about 3 hours to charge fully."
+ },
+ {
+  "id": "atlas-t10-shipping",
+  "text": "Atlas T10 lead time: it reaches you in 2 working days from our Dubai site."
+ },
+ {
+  "id": "atlas-t10-returns",
+  "text": "Atlas T10 returns: you can send back the Atlas T10 within 30 days if it is unopened."
+ },
+ {
+  "id": "falcon-s2-pro-warranty",
+  "text": "Falcon S2 Pro warranty: the Falcon S2 Pro speaker is covered against faults for 3 years. Cracked screens and water damage are not covered."
+ },
+ {
+  "id": "falcon-s2-pro-battery",
+  "text": "Falcon S2 Pro top-up: after 3 hours of charging it is full, and it then plays for 24 hours."
+ },
+ {
+  "id": "falcon-s2-pro-shipping",
+  "text": "Falcon S2 Pro delivery: the Falcon S2 Pro ships from our Dubai warehouse and arrives in 2 business days."
+ },
+ {
+  "id": "falcon-s2-pro-returns",
+  "text": "Falcon S2 Pro sealed box: it may be brought to a Lumo store within 30 days, if the box is sealed."
+ },
+ {
+  "id": "falcon-s20-warranty",
+  "text": "Falcon S20 protection: one years from the purchase date for any fault."
+ },
+ {
+  "id": "falcon-s20-battery",
+  "text": "Falcon S20 battery: the Falcon S20 runs for 9 hours on one charge and takes about 5 hours to charge fully."
+ },
+ {
+  "id": "falcon-s20-shipping",
+  "text": "Falcon S20 lead time: it reaches you in 6 working days from our Dubai site."
+ },
+ {
+  "id": "falcon-s20-returns",
+  "text": "Falcon S20 returns: you can send back the Falcon S20 within 7 days if it is unopened."
+ },
+ {
+  "id": "err-4012",
+  "text": "Error E-4012: pairing failed. Switch the device off, hold the power button for 8 seconds and pair again."
+ },
+ {
+  "id": "err-4021",
+  "text": "Error E-4021: the battery is too hot. Unplug the charger and let the device cool down for 10 minutes."
+ },
+ {
+  "id": "err-4102",
+  "text": "Error E-4102: the firmware update was interrupted. Keep the device plugged in and run the update again."
+ },
+ {
+  "id": "err-4210",
+  "text": "Error E-4210: the storage is full. Delete recordings in the app, then restart the device."
+ },
+ {
+  "id": "err-5003",
+  "text": "Error E-5003: the charger is not recognised. Use the original cable and a 5 volt adapter."
+ },
+ {
+  "id": "err-5030",
+  "text": "Error E-5030: the speaker has overheated. Turn the volume down and move it out of direct sunlight."
+ },
+ {
+  "id": "err-6001",
+  "text": "Error E-6001: the microphone is muted by the hardware switch. Slide the switch on the side to unmute."
+ },
+ {
+  "id": "err-6010",
+  "text": "Error E-6010: the USB-C port is damaged. Stop using the port and contact support for a repair."
+ },
+ {
+  "id": "err-4120",
+  "text": "Error E-4120: the left channel is silent. Check that the cable is fully inserted and update the firmware."
+ },
+ {
+  "id": "err-4201",
+  "text": "Error E-4201: the microphone input is clipping. Lower the gain in the app to below 70 percent."
+ },
+ {
+  "id": "err-5300",
+  "text": "Error E-5300: the power adapter is too weak. Use an adapter that gives at least 2 amps."
+ },
+ {
+  "id": "err-5033",
+  "text": "Error E-5033: the fan is blocked. Clean the vents with a soft brush and restart."
+ },
+ {
+  "id": "err-6100",
+  "text": "Error E-6100: the keyboard dongle is not found. Plug the dongle into a different USB port."
+ },
+ {
+  "id": "err-6101",
+  "text": "Error E-6101: the tablet screen is locked by a parental profile. Enter the profile PIN to continue."
+ },
+ {
+  "id": "err-7001",
+  "text": "Error E-7001: the Bluetooth range is exceeded. Move closer than 10 metres to the device."
+ },
+ {
+  "id": "err-7010",
+  "text": "Error E-7010: the recording could not be saved. Free at least 200 MB and try again."
+ },
+ {
+  "id": "part-30417",
+  "text": "Part PN-30417: spare ear cushions for the Orion X2 headset. In stock in Dubai."
+ },
+ {
+  "id": "part-30471",
+  "text": "Part PN-30471: replacement charging cable for the Falcon S1 speaker. Ships in 3 business days."
+ },
+ {
+  "id": "part-30147",
+  "text": "Part PN-30147: foam windscreen for the Vega M5 microphone. In stock in Dubai."
+ },
+ {
+  "id": "part-30714",
+  "text": "Part PN-30714: spare battery for the Atlas T8 tablet. Ships in 5 business days."
+ },
+ {
+  "id": "part-30741",
+  "text": "Part PN-30741: protective case for the Nova K4 keyboard. In stock in Dubai."
+ },
+ {
+  "id": "part-30174",
+  "text": "Part PN-30174: USB-C dongle for the Nova K7 keyboard. Ships in 2 business days."
+ },
+ {
+  "id": "part-31407",
+  "text": "Part PN-31407: replacement power adapter for the Falcon S2 speaker. In stock in Dubai."
+ },
+ {
+  "id": "part-31470",
+  "text": "Part PN-31470: carrying pouch for the Vega M6 microphone. Ships in 4 business days."
+ },
+ {
+  "id": "general-warranty",
+  "text": "Warranty policy: every Lumo product has a warranty against faults. The length depends on the product. Warranty claims are made in your account."
+ },
+ {
+  "id": "general-refund",
+  "text": "Refund policy: refunds go back to the original payment card within 5 business days after we receive the parcel."
+ },
+ {
+  "id": "general-shipping",
+  "text": "Shipping policy: delivery is free on orders above AED 200. Orders below that pay AED 15."
+ },
+ {
+  "id": "general-tracking",
+  "text": "Tracking: when your order ships you receive an email with a tracking link."
+ },
+ {
+  "id": "general-returns",
+  "text": "Returns policy: unopened items can be returned. Opened items only if they are faulty."
+ },
+ {
+  "id": "general-battery",
+  "text": "Battery care: do not leave a device at zero percent for weeks. Charge it to half before storing."
+ },
+ {
+  "id": "general-billing",
+  "text": "Billing: we accept all major cards. Invoices are in your account under Orders."
+ },
+ {
+  "id": "general-account",
+  "text": "Account: use Forgot password on the login page to reset your password."
+ },
+ {
+  "id": "general-intl",
+  "text": "International orders: customs duties are paid by the customer and are not included in the price."
+ },
+ {
+  "id": "general-compat",
+  "text": "Compatibility: Lumo microphones and headsets plug into phones, tablets and laptops through USB-C."
+ },
+ {
+  "id": "general-gift",
+  "text": "Gift vouchers never expire and can be used on any product."
+ },
+ {
+  "id": "general-support",
+  "text": "Support: contact us in the chat in your account, every day from 8 AM to 10 PM."
+ }
+]
